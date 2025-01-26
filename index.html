@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Andrew Kim - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Andrew Kim
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          akim@akemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +11239495867
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+        <div class="topdiv">
+            <a class="topmenu" href="#skills">Skills</a>
+        <div class="topdiv">
+            <a class="topmenu" href="#projects">Projects</a>
+        <div class="topdiv">
+            <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Andrew Kim! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a software developer with over 5 years of experience in both application and presentation layers.
+            I have worked on applications and tools including software development and code review that I implement
+            and utilize through Github. Some of my favorite prorams I like to use include Visual Studio Code, Microsoft
+            Azure, Python and SQL.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>3 years experience</p>
+          </div>  
+
+        <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>java</h6>
+            <p>5 years experience</p>
+          </div> 
+        
+        <div class="skill">
+            <img src="html_finalprojimages/node.png"/>
+            <h6>node</h6>
+            <p>2 years experience</p>
+          </div>  
+      </div>
+    </section>
+        
+      </div>  
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Robots</h3>
+            <ul>
+              <li>Used AI robotic algorithms to create machine-learning robots to mimic and engage in humanistic and business conversations with clients.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Virtual Assistans</h3>
+            <ul>
+              <li>Developed and deployed a virtual assistant infused with predictive analysis and algorithm trading for the dollar count seciton of a Fifth Third Bank Cincinnati branch.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Formula 1 Simulator</h3>
+            <ul>
+              <li>Created a simulated, immersive cockpit for the Andretti F1 Team and integrated it with multi-functional solutions using anomalies and data integration for a competitive edge.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Andrew is a very quick learner in comprehending multiple key concepts involving AI within a short timeframe and has been one of the top prospective employees that has embraced the AI world around him. He has a great sense of humor and is a diversive team player. He has a curious mindset, he is always pinpointing the smallest things that appear off, and has the qualities to become a future team leader of an AI project.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Andrew has been a divine pleasure and blessing. He is very knowledgable and embodies the meaning of being a team player by ensuring that every member in his team is credited within a major project. He also goes the extra mile to ensure those who struggle to comprehend are able to and he keeps everyone energized from start to finish. I would want to work with Andrew agin in future projects.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I have had the pleasure in having Andrew work for us at the McLaren Technology Group as an intern. At a time where we were struggling to implement data for on-track performance, Andrew developed an integrated, immersive AI simulator and infused it with data analytics to pinpoint areas where we as a team could improve performance from qualifying to race competition. In the timeframe Andrew used his skillsets, we were able to contend for podiums and victories on a consistent basis. He has the tools needed for an ongoing success and a bigger, brighter future ahead of him.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
